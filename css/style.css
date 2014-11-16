@@ -1,0 +1,240 @@
+body {
+    position: relative;
+    background: #D4E3FC;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.main {
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+header nav ul {
+    list-style-type: none;
+    border: 2px solid #000000;
+    padding: 3px 0;
+    text-align: center;
+    background: #e4e4e4;
+    overflow: hidden;
+}
+
+header nav ul li {
+    float: left;
+    border: 2px solid #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    width: calc(100%/4 - 3px);
+    background: #fff;
+    height: 30px;
+}
+
+header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+
+header nav ul li a[href="#home"]:before {
+    content: url("../img/home.png");
+}
+
+header nav ul li a[href="#faq"]:before {
+    content: url("../img/faq.png");
+}
+
+header nav ul li a[href="#contacts"]:before {
+    content: url("../img/contacts.png");
+}
+
+header nav ul li a[href="#stay"]:before {
+    content: url("../img/stay.png");
+}
+
+
+header nav ul li:nth-last-of-type(1) {
+    border-right: none;
+}
+
+header nav ul li:nth-of-type(1) {
+    border-left: none;
+}
+
+section.home, section.faq, section.contacts, section.stay, footer {
+    background: #fff;
+    border: 2px solid #000000;
+    padding: 20px;
+    overflow: hidden;
+}
+
+footer {
+    padding: 0;
+}
+
+section.home .picture img {
+    margin: 0 40px 0 0;
+    float: left;
+}
+
+section.home .picture-back {
+    width: 216px;
+    height: 144px;
+    background: url("../img/noimg.png") no-repeat;
+    background-size: cover;
+    margin-left: 30px;
+    float: right;
+}
+
+h1.section-title {
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+}
+
+section.contacts .map {
+    float: left;
+}
+
+section.contacts ul {
+    list-style-type: none;
+}
+
+section.contacts .contact-data {
+    max-width: 439px;
+    margin-left: 230px;
+    font-size: 1.3em;
+    line-height: 20px;
+}
+
+section.contacts .contact-data ul li {
+    margin-bottom: 40px;
+}
+
+section.contacts .contact-data ul li:nth-of-type(1) {
+    text-align: right;
+}
+
+section.contacts .contact-data ul li.adr:before {
+    content: url("../img/adr.png");
+}
+section.contacts .contact-data ul li.email:before {
+    content: url("../img/email.png");
+}
+
+
+section.contacts .contact-data ul li.phone:before {
+    content: url("../img/phone.png");
+}
+
+
+
+section.stay form {
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+section.stay form .name {
+    margin-bottom: 20px;
+}
+
+section.stay form input#name, input#email {
+    float: right;
+    width: 230px;
+    border: 2px solid #000000;
+}
+
+section.stay form .confirm {
+    margin-top: 30px;
+}
+
+section.stay form .confirm input {
+    margin-left: 26px;
+}
+
+footer {
+    height: 155px;
+}
+
+footer nav {
+    width: 45%;
+    height: inherit;
+    background: #444444;
+    border-right: 2px solid #000000;
+    float: left;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav ul li {
+    margin: 17px 0;
+}
+
+footer nav ul li a {
+    color: #ff3823;
+}
+
+footer .voting {
+    background: #d6d6d6;
+    width: calc(55% - 2px);
+    height: inherit;
+    float: right;
+}
+
+footer .voting .feedback {
+    padding: 20px;
+}
+
+footer .voting p.foot-title {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+footer .voting p.foot-title:before {
+    content: url("../img/arr.png");
+}
+
+footer .voting p.foot-question, .radio-list {
+    float: left;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer .voting .radio-list .rad {
+    display: inline;
+}
+
+footer .voting .radio-list input {
+    margin: 8px;
+}
+
+footer .voting button {
+    border: 2px solid #000000;
+    width: 60px;
+    height: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background: #e6e6e6;
+}
+
+.copy {
+    text-align: center;
+    font-size: 13px;
+}
